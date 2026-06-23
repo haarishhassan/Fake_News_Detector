@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The AI Multi-Agent News Detector</title>
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+    <div class="paper-container">
+        <header class="masthead">
+            <div class="masthead-meta">
+                <span>VOL. CLXXVI No. 42</span>
+                <span class="live-date">INTELLIGENCE EDITION</span>
+                <span>PRICE: 0.00 $</span>
+            </div>
+            <div class="masthead-title">
+            <img src="/logo.png" alt="AI News Logo" class="masthead-logo">
+            <h1>THE AGENT NEWS DETECTOR</h1>
+            </div>
+            <div class="masthead-subtitle">
+                <p>Truth and Veracity Maintained via Parallel Fact-Checking and Linguistic Analysis Nodes</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="editorial-desk">
+                <h2 class="section-title">Paste Article Text</h2>
+                <div class="input-section">
+                    <textarea id="newsInput" placeholder="Paste raw article wire text here for verification..."></textarea>
+                    <button id="verifyBtn">🔍 Scan Text</button>
+                </div>
+            </section>
+
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p class="loading-text">Specialists are cross-examining syntax and verifying primary sources...</p>
+            </div>
+
+            <div id="resultCard" class="card hidden">
+                <div class="verdict-wrapper">
+                    <div id="verdictBadge" class="badge"></div>
+                </div>
+                
+                <div class="results-columns">
+                    <div class="result-box justification-column">
+                        <h3>📋 Editorial Justification Summary</h3>
+                        <p id="justificationText"></p>
+                    </div>
+                    <div class="result-box flags-column">
+                        <h3>⚠️ Contextual Red Flags Caught</h3>
+                        <ul id="redFlagsList"></ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
